@@ -1,3 +1,100 @@
-<p>
-  contact works!
-</p>
+<header id="contact-header">
+  <div class="dark-overlay">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 m-auto text-center textInfo">
+          <h1>Get In Touch!</h1>
+          <p class="d-none d-md-block">Drop me a line. Make it fun. Say "hello" in a different language!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="py-4">
+  <div class="container">
+    <div class="wrapper">
+      <div class="company-info bg-primary text-white">
+        <h3>Contact Information</h3>
+        <hr class="bg-white">
+        <p>Fill out the form to get in contact with me or
+            message me directly with my email listed below.</p>
+        <ul>
+          <li><i class="fa fa-envelope"></i> timothyjacque@gmail.com</li>
+        </ul>
+      </div>
+      <div class="contact bg-light">
+        <div class="alert">Your message has been sent!</div>
+        <form id="contactForm">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+                <div class="input-group text-dark">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text">
+                      <i class="fa fa-user"></i>
+                    </span>
+                  </div>
+                  <input type="text" name="name" id="name" class="form-control" placeholder="Name" required>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <div class="input-group text-dark">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text">
+                      <i class="fa fa-building"></i>
+                    </span>
+                  </div>
+                  <input type="text" name="company" id="company" class="form-control" placeholder="Company">
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <div class="input-group text-dark">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text">
+                      <i class="fa fa-envelope"></i>
+                    </span>
+                  </div>
+                  <input type="email" name="email" id="email" class="form-control" placeholder="Email" required>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <div class="input-group text-dark">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text">
+                      <i class="fa fa-phone"></i>
+                    </span>
+                  </div>
+                  <input type="text" name="phone" id="phone" class="form-control" placeholder="Phone">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <div class="form-group">
+                <div class="input-group text-dark">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text">
+                      <i class="fa fa-pencil"></i>
+                    </span>
+                  </div>
+                  <textarea name="message" rows="5" id="message" class="form-control" placeholder="Message" required></textarea>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12">
+              <button type="submit" class="btn btn-outline-primary btn-block">Submit</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>

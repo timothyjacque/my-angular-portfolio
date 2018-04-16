@@ -1,0 +1,30 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import "~bootstrap/dist/css/bootstrap.css";
+
+$icon-size:55px;
+$dark-overlay:rgba(0,0,0,0.5);
+
+html{
+  position:relative;
+  min-height:100%;
+}
+
+body{
+  overflow-x:hidden;
+  margin-bottom:100px;
+  padding-top: 80px;
+}
+
+.fa{
+  font-size:$icon-size;
+}
+
+.dark-overlay{
+  position:absolute;
+  background-color:$dark-overlay;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+}

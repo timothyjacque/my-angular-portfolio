@@ -1,0 +1,46 @@
+.carousel-item{
+    height:500px;
+  }
+  .carousel-image-1{
+    background:url('../../assets/img/engineering.jpg');
+    background-size:cover;
+  }
+  .carousel-image-2{
+    background:url('../../assets/img/programming.jpg');
+    background-size:cover;
+  }
+  .carousel-image-3{
+    background:url('../../assets/img/business.jpg');
+    background-size:cover;
+  }
+  
+  #skills-header{
+    position:relative;
+    min-height:200px;
+    background:url('../../assets/img/rocket.jpg');
+    background-attachment:fixed;
+    background-repeat:no-repeat;
+    background-size:cover;
+    text-align:center;
+    color:#fff;
+    .fa{
+      font-size:20px;
+    }
+  }
+  
+  #video-play{
+    position:relative;
+    min-height:250px;
+    background:url('../../assets/img/brainstorm.jpg');
+    background-attachment:fixed;
+    background-repeat:no-repeat;
+    background-position:-350px -200px;
+    text-align:center;
+    color:#fff;
+    a{
+      color:#fff;
+    }
+    .playInfo{
+      padding-top:70px;
+    }
+  }

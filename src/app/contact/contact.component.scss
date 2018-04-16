@@ -1,0 +1,54 @@
+#contact-header{
+    height:350px;
+    position:relative;
+    background:url('../../assets/img/contact.jpg');
+    background-attachment:fixed;
+    background-repeat:no-repeat;
+    background-position: -300px -450px;
+    color:#fff;
+    border-bottom:1px #eee solid;
+    .textInfo{
+      padding-top:150px;
+    }
+}
+
+.card, .wrapper{
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+.wrapper > *{
+    padding: 1em;
+}
+.wrapper{
+ul{
+    list-style: none;
+    padding:0;
+    .fa{
+    font-size:20px;
+    }
+}
+.contact{
+    .fa{
+    font-size:20px;
+    }
+}
+}
+// LARGE SCREENS
+@media(min-width:700px){
+.wrapper{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    }
+    .wrapper > *{
+        padding:2em;
+    }
+}
+
+// ALERT BOX ON SUBMIT
+.alert{
+    text-align: center;
+    padding:10px;
+    background:#28A745;
+    color:#fff;
+    margin-bottom:10px;
+    display:none;
+}

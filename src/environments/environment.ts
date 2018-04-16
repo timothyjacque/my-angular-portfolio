@@ -6,11 +6,11 @@
 export const environment = {
   production: false,
   firebase: {
-    apiKey: '[...]',
-    authDomain: '[...]',
-    databaseURL: '[...]',
-    projectId: '[...]',
-    storageBucket: '[...]',
-    messagingSenderId: '[...]'
+    apiKey: 'AIzaSyBeQHVncDgNBruAuOylPM5wrPGcBcQwJC4',
+    authDomain: 'my-angular-portfolio.firebaseapp.com',
+    databaseURL: 'https://my-angular-portfolio.firebaseio.com',
+    projectId: 'my-angular-portfolio',
+    storageBucket: 'my-angular-portfolio.appspot.com',
+    messagingSenderId: '402039859122'
   }
 };

@@ -1,3 +1,4 @@
+import { MessageService } from './services/message.service';
 import { NgModule } from '@angular/core';
 import { MatCardModule } from '@angular/material/card';
 import { BrowserModule } from '@angular/platform-browser';
@@ -15,8 +16,7 @@ import { FunComponent } from './fun/fun.component';
 import { HomeComponent } from './home/home.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { WorkComponent } from './work/work.component';
-
-
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -35,6 +35,7 @@ import { WorkComponent } from './work/work.component';
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireDatabaseModule,
     AngularFireAuthModule,
+    FormsModule,
     MatCardModule,
     RouterModule.forRoot([
       { path: '', component: HomeComponent },
@@ -44,7 +45,9 @@ import { WorkComponent } from './work/work.component';
       { path: 'contact', component: ContactComponent },
     ])
   ],
-  providers: [],
+  providers: [
+    MessageService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

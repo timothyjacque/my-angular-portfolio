@@ -5,15 +5,20 @@
   }
   
   #work-header{
-    height:350px;
-    position:relative;
     background:url('../../assets/img/work.jpg');
     background-attachment:fixed;
     background-repeat:no-repeat;
     background-size:cover;
-    color:#fff;
+    background-position: 0 -200px;
     border-bottom:1px #eee solid;
+    color:#fff;
+    height:350px;
+    position:relative;
     .textInfo{
       padding-top:150px;
     }
+  }
+
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }

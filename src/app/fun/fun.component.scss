@@ -1,12 +1,13 @@
 #fun-header{
-    height:350px;
-    position:relative;
     background:url('../../assets/img/fun.jpg');
     background-attachment:fixed;
     background-repeat:no-repeat;
+    background-position: 0 -300px;
     background-size:cover;
-    color:#fff;
     border-bottom:1px #eee solid;
+    color:#fff;
+    height:350px;
+    position:relative;
     .textInfo{
       padding-top:150px;
     }
@@ -38,4 +39,8 @@
           -moz-column-count: 3;
           column-count: 3;
       }
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }

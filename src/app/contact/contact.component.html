@@ -25,10 +25,13 @@
       </div>
       <div class="contact bg-light">
         <div class="alert">Your message has been sent!</div>
+        <div class="alert alert-danger" *ngIf="username.touched">
+          Name is required.
+        </div>
 
         <form #f="ngForm" (ngSubmit)="onSubmit(f.value)" id="contactForm">
           <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-12">
               <div class="form-group">
                 <div class="input-group text-dark">
                   <div class="input-group-prepend">
@@ -40,19 +43,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-6">
-              <div class="form-group">
-                <div class="input-group text-dark">
-                  <div class="input-group-prepend">
-                    <span class="input-group-text">
-                      <i class="fa fa-building"></i>
-                    </span>
-                  </div>
-                  <input #company="ngModel" [(ngModel)]="message.company" type="text" name="company" id="company" class="form-control" placeholder="Company">
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6">
+            <div class="col-md-12">
               <div class="form-group">
                 <div class="input-group text-dark">
                   <div class="input-group-prepend">
@@ -61,18 +52,6 @@
                     </span>
                   </div>
                   <input #email="ngModel" [(ngModel)]="message.email" type="email" name="email" id="email" class="form-control" placeholder="Email" required>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="form-group">
-                <div class="input-group text-dark">
-                  <div class="input-group-prepend">
-                    <span class="input-group-text">
-                      <i class="fa fa-phone"></i>
-                    </span>
-                  </div>
-                  <input #phone="ngModel" [(ngModel)]="message.phone" type="text" name="phone" id="phone" class="form-control" placeholder="Phone">
                 </div>
               </div>
             </div>
@@ -91,7 +70,7 @@
               </div>
             </div>
             <div class="col-md-12">
-              <button type="submit" class="btn btn-outline-primary btn-block">Submit</button>
+              <button [disabled]="!f.valid" type="submit" class="btn btn-outline-primary btn-block">Submit</button>
             </div>
           </div>
         </form>

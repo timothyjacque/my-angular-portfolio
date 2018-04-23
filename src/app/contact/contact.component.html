@@ -24,10 +24,6 @@
         </ul>
       </div>
       <div class="contact bg-light">
-        <div class="alert">Your message has been sent!</div>
-        <div class="alert alert-danger" *ngIf="username.touched">
-          Name is required.
-        </div>
 
         <form #f="ngForm" (ngSubmit)="onSubmit(f.value)" id="contactForm">
           <div class="row">

@@ -18,13 +18,6 @@ export class ContactComponent implements OnInit {
   onSubmit(message) {
     this.messageService.create(message);
     this.form.reset();
-
-    // document.querySelector('.alert').style.display = 'block';
-
-    // setTimeout(function(){
-    //   document.querySelector('.alert').style.display = 'none';
-    // }, 5000);
-
   }
 
   ngOnInit() {

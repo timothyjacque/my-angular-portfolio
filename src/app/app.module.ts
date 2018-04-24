@@ -6,6 +6,7 @@ import { RouterModule } from '@angular/router';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireAuthModule } from 'angularfire2/auth';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
+import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 
 import { environment } from '../environments/environment';
 import { AppComponent } from './app.component';
@@ -46,7 +47,8 @@ import { FormsModule } from '@angular/forms';
     ])
   ],
   providers: [
-    MessageService
+    MessageService,
+    {provide: LocationStrategy, useClass: HashLocationStrategy}
   ],
   bootstrap: [AppComponent]
 })

@@ -18,6 +18,7 @@ import { HomeComponent } from './home/home.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { WorkComponent } from './work/work.component';
 import { FormsModule } from '@angular/forms';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 
 @NgModule({
@@ -29,7 +30,8 @@ import { FormsModule } from '@angular/forms';
     NavbarComponent,
     ContactComponent,
     WorkComponent,
-    FunComponent
+    FunComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
@@ -44,6 +46,7 @@ import { FormsModule } from '@angular/forms';
       { path: 'college', component: CollegeComponent },
       { path: 'fun', component: FunComponent },
       { path: 'contact', component: ContactComponent },
+      { path: '**', component: PageNotFoundComponent }
     ])
   ],
   providers: [
